@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, Form, Depends, Request, Query, status
-from db.models import (
+from models.models import (
     Feedback,
 )
 

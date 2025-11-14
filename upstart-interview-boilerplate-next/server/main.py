@@ -8,9 +8,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from db.db import init_db
 from routers.forms import router as form_router
 from routers.polls import router as poll_router
+from routers.url_shortener import router as url_shortener_router
 
 from middleware.logging import logging_middleware
 from redis import q
+
+
+import logging
+
+logger = logging.getLogger(__name__)
 
 load_dotenv()
 
@@ -68,3 +74,4 @@ init_db()
 
 app.include_router(router=form_router)
 app.include_router(router=poll_router)
+app.include_router(router=url_shortener_router)

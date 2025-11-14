@@ -1,5 +1,5 @@
 # from sqlalchemy
-from db.models import Feedback
+from models.models import Feedback
 
 from schemas.form import FeedbackFilter, FeedbackUpdate, FeedbackCreate
 

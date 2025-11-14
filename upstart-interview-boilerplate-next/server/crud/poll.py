@@ -1,5 +1,5 @@
 # from sqlalchemy
-from db.models import Poll
+from models.models import Poll
 from schemas.poll import PollCreate
 
 from db.utils import handle_db_exceptions

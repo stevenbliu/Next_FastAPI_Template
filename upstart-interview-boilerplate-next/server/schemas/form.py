@@ -1,6 +1,6 @@
 from sqlmodel import Field, SQLModel, Relationship
 from typing import Optional, List
-from db.models import Feedback
+from models.models import Feedback
 
 
 # response models
